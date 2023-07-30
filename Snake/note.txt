@@ -4,3 +4,5 @@ https://www.youtube.com/watch?v=hM2vvcXBV84&t=363s
 1) Текстовый редактор: https://atom.io/
 2) Подборк иконок: https://www.iconfinder.com/
 3) Сообщество программистов: https://itproger.com/
+
+Список кодов клавишь клавиатуры: https://narvell.nl/keys

@@ -1,5 +1,6 @@
 // Получаем элемент по id 
 const canvas = document.getElementById('game');
+const message = document.getElementById('message');
 // Задаем для canvas тип 2d
 const ctx = canvas.getContext('2d');
 // Передаем класс Image (позволяет работать с картинками) в ground 
@@ -85,7 +86,10 @@ function drawGame () {
     // Завершаем игру в случае выхода из игрового поля
     if(snakeX < box || snakeX > box * 17
         || snakeY < 3 * box || snakeY > box * 17)
-        clearInterval(game);
+        clearInterval(
+            game, 
+            message.innerText = 'Вы вышли из игрового поля',
+            message.classList.replace('message-none', 'message'));
 
     // Меняем координаты в зависимости от переданного dir
     if(dir == "left") snakeX -= box;

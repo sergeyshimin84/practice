@@ -1,4 +1,19 @@
 canvas {
    display: block;
-   margin: 0 auto; 
+   position: relative;
+   margin: 0 auto;
+   z-index: -1;
+}
+
+.message-none {
+   display: none;
+}
+
+.message {
+   position: relative;
+   margin: 0 auto;
+   border: 10px solid #db1212;
+   padding: 10px;
+   margin: 20px;
+   z-index: 1;
 }

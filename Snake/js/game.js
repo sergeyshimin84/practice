@@ -25,9 +25,6 @@ let food = {
 // Задаем змейку (это масcив в который мы добавляем объекты)
 let snake = [];
 
-
-
-
 // Задаем исходное расположение змейки
 snake[0] = {
     x: 9 * box,
@@ -37,6 +34,7 @@ snake[0] = {
 document.addEventListener("keydown", direction);
 // Объявили пустую переменную dir
 let dir;
+
 // Указываем при нажатии каких клавиш какое событие передавать
 function direction (event) {
     // В условии прописываем проверку на взаимоисключающие действия
@@ -53,6 +51,7 @@ function direction (event) {
 function eatTail(head, arr) {
     for(let i = 0; i < arr.length; i++) {
         if(head.x == arr[i].x && head.y == arr[i].y)
+        // Останавливаем игру, передаем сообщение
         clearInterval(
             game,
             message.innerText = 'Вы съели свой хвост',
@@ -93,6 +92,7 @@ function drawGame () {
     // Завершаем игру в случае выхода из игрового поля
     if(snakeX < box || snakeX > box * 17
         || snakeY < 3 * box || snakeY > box * 17)
+        // Останавливаем игру, передаем сообщение
         clearInterval(
             game, 
             message.innerText = 'Вы вышли из игрового поля',
@@ -113,8 +113,6 @@ function drawGame () {
 
     snake.unshift(newHead);
 }
-
-
 
 // С помощью setInterval задаем частоту обновления картинки (частоту вызова функции drawGame)
 let game = setInterval(drawGame, 150);

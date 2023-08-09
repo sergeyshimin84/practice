@@ -1,8 +1,15 @@
-canvas {
-   display: block;
-   position: relative;
+.container {
+   display: flex;
+   flex-direction: column;
+   max-width: 608px;
+   max-height: 608px;
    margin: 0 auto;
    z-index: -1;
+}
+
+canvas {
+   margin-bottom: -386px;
+   z-index: 0;
 }
 
 .message-none {
@@ -10,10 +17,11 @@ canvas {
 }
 
 .message {
-   position: relative;
-   margin: 0 auto;
-   border: 10px solid #db1212;
+   border: 32px solid red;
    padding: 10px;
-   margin: 20px;
+   margin: 32px;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+   font-size: 25px;
    z-index: 1;
 }

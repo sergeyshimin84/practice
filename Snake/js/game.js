@@ -24,6 +24,10 @@ let food = {
 };
 // Задаем змейку (это масcив в который мы добавляем объекты)
 let snake = [];
+
+
+
+
 // Задаем исходное расположение змейки
 snake[0] = {
     x: 9 * box,
@@ -49,7 +53,10 @@ function direction (event) {
 function eatTail(head, arr) {
     for(let i = 0; i < arr.length; i++) {
         if(head.x == arr[i].x && head.y == arr[i].y)
-        clearInterval(game);
+        clearInterval(
+            game,
+            message.innerText = 'Вы съели свой хвост',
+            message.classList.replace('message-none', 'message'));
     }
 }
 

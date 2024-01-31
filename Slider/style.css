@@ -11,6 +11,13 @@
     overflow: hidden;
 }
 
+.box-area {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .points-area-size {
     display: flex;
     width: 150px;
@@ -31,7 +38,7 @@
     background: rgb(144, 144, 144);
 }
 
-.image-area {
+.images-area {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -44,6 +51,8 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    /* -webkit-animation-name: 'Animation';
+    -webkit-animation-duration: 1s; */
 }
 
 .active-image {
@@ -51,3 +60,40 @@
     background: rgb(144, 144, 144);
     border-radius: 10px;
 }
+
+.btns-area-size {
+    display: flex;
+    position: absolute;
+    width: 95%;
+    justify-content: space-between;
+}
+
+i.fa.fa-arrow-left, i.fa.fa-arrow-right {
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.block-arrov {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.block-arrov:hover {
+    background-color: rgb(144, 144, 144);
+    width: 35px;
+    height: 35px;
+}
+
+/* @-webkit-keyframes Animation {
+    0% (opacity: 0;)
+    100% (opacity: 1;)
+} */
